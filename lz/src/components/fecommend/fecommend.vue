@@ -42,10 +42,10 @@
               </a>
             </li>
           </ul>
-          <button class="btn" style="left: 0;" @click="btnUp">
+          <button class="btn" style="left: 0;" @click="gotoPage(prevIndex)">
             <i class="iconfont icon-zuojiantou"></i>
           </button>
-          <button class="btn" @click="btnNext()">
+          <button class="btn" @click="gotoPage(nextIndex)">
             <i class="iconfont icon-youjiantou"></i>
           </button>
         </div>
@@ -85,11 +85,15 @@ export default {
             "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c0c05274f2fbb55fbccb89622f798907.jpg?w=632&h=340",
         },
       ],
+      dataList: "",
+      currentIndex: 0, //默认显示图片
+      timer: null, //定时器
     };
   },
   created() {
     // this.curStartTime = "2019-08-09";
     this.countTime();
+    // this.swap();
   },
   methods: {
     // 倒计时
@@ -134,16 +138,28 @@ export default {
         setTimeout(this.countTime, 1000);
       }
     },
-    swap() {
-      // 4图轮播图
-      //1、获取盛放图片的盒子和盛放焦点的盒子
-      let ul = document.querySelector(".lbt");
+    gotoPage(index) {
+      this.currentIndex = index;
+      let a = document.getElementsByClassName("#imgList>li");
+      console.log(this.a);
     },
-    btnUp() {
-      //   console.log("123");
+  },
+  computed: {
+    //上一张
+    prevIndex() {
+        if (this.currentIndex == 0) {
+          return this.dataList.length - 1;
+        } else {
+          return this.currentIndex - 1;
+        }
     },
-    btnNext() {
-      //   console.log("456");
+    //下一张
+    nextIndex() {
+      if (this.currentIndex == this.dataList.length - 1) {
+        return 0;
+      } else {
+        return this.currentIndex + 1;
+      }
     },
   },
 };

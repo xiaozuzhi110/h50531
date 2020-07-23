@@ -5,7 +5,10 @@
     <Container />
     <HederCen />
     <!-- 内容 -->
+
     <Fecommend />
+    <EveryDay />
+
     <!-- 尾部 -->
     <FooterT />
     <FooterB />
@@ -34,6 +37,7 @@ import FooterT from "@/components/footer/footer-t";
 import FooterB from "@/components/footer/footer-b";
 //内容
 import Fecommend from "@/components/fecommend/fecommend";
+import EveryDay from "@/components/content/EveryDay";
 export default {
   name: "Home",
   components: {
@@ -43,6 +47,10 @@ export default {
     FooterT,
     FooterB,
     Fecommend,
+    EveryDay,
   },
 };
 </script>
+<style lang="scss" scoped>
+
+</style>

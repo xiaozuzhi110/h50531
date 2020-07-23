@@ -1,27 +1,29 @@
 <template>
   <div class="footerB">
-    <ul>
-      <li v-for="(item,index) in data" :key="index">{{item.title}}</li>
-    </ul>
-    <div>
-      <a href="#">
-        <img src="../../assets/img/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg" alt />
-      </a>
-      <a href="#">
-        <img src="../../assets/img/CgQCr1PQy1CAF7vaAABDexsiEYM24800.jpg" alt />
-      </a>
-      <a href="#">
-        <img src="../../assets/img/f582260777c44b30.png" alt />
-      </a>
-      <a href="#">
-        <img src="../../assets/img/ChEi2lh171KAJrGlAAALl_uZt0E75600.jpg" alt />
-      </a>
-      <a href="#">
-        <img src="../../assets/img/CgQCrlPYTqCASlHXAAAd82JE0eA31000.png" alt />
-      </a>
-      <a href="#">
-        <img src="../../assets/img/7b46518a9d74a1d6.jpg" alt />
-      </a>
+    <div class="footerB-c">
+      <ul>
+        <li v-for="(item,index) in data" :key="index">{{item.title}}</li>
+      </ul>
+      <div>
+        <a href="#">
+          <img src="../../assets/img/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg" alt />
+        </a>
+        <a href="#">
+          <img src="../../assets/img/CgQCr1PQy1CAF7vaAABDexsiEYM24800.jpg" alt />
+        </a>
+        <a href="#">
+          <img src="../../assets/img/f582260777c44b30.png" alt />
+        </a>
+        <a href="#">
+          <img src="../../assets/img/ChEi2lh171KAJrGlAAALl_uZt0E75600.jpg" alt />
+        </a>
+        <a href="#">
+          <img src="../../assets/img/CgQCrlPYTqCASlHXAAAd82JE0eA31000.png" alt />
+        </a>
+        <a href="#">
+          <img src="../../assets/img/7b46518a9d74a1d6.jpg" alt />
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -49,32 +51,37 @@ export default {
 
 <style lang="scss" scoped>
 .footerB {
-  width: 1200px;
-  height: 116px;
-  margin: 0 auto;
-  text-align: center;
-  ul {
-    height: 38px;
-    padding-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    li {
-      float: left;
-      line-height: 18px;
-      border-right: 2px solid #ccc;
-      padding: 0 8px;
+  background-color: #f4f4f4 ;
+  .footerB-c {
+    width: 1200px;
+    height: 116px;
+    margin: 0 auto;
+    text-align: center;
+    ul {
+      height: 38px;
+      padding-left: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-top: 12px;
+      margin-bottom: 14px;
+      li {
+        float: left;
+        line-height: 18px;
+        border-right: 2px solid #ccc;
+        padding: 0 8px;
+      }
+      li:last-child {
+        border-right: none;
+      }
     }
-    li:last-child {
-      border-right: none;
-    }
-  }
-  div {
-    height: 30px;
-    margin-top: 10px;
-    a {
-      margin-right: 10px;
+    div {
+      height: 30px;
+      margin-top: 10px;
+      a {
+        margin-right: 10px;
+      }
     }
   }
 }

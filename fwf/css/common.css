@@ -1,0 +1,221 @@
+/* 设置样式编码 */
+@charset "utf-8";
+
+/* 全屏 通栏 */
+.container-fliud{width: 100%; min-width: 1200px;}
+
+/* 版心-主要内容 */
+.container{width: 1200px; margin: 0 auto;} 
+
+/* 测试工具 */
+.bd{border: 1px solid red; box-sizing: border-box;}
+
+/* 浮动 */
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: '';height: 0;display: block;clear: both;}
+
+/* 字体大小、缩进、粗细、颜色*/
+.f10{font-size: 10px;}
+.f12{font-size: 12px;}
+.f14{font-size: 14px;}
+.f16{font-size: 16px;}
+.f18{font-size: 18px;}
+.f20{font-size: 20px;}
+.f24{font-size: 24px;}
+.f26{font-size: 26px;}
+.f30{font-size: 30px;}
+.suojin1{text-indent: 1em;}
+.suojin2{text-indent: 2em;}
+.bolder{font-weight: bolder;}
+.bold{font-weight: bold;}
+.red{color: red;}
+.juzhong{text-align: center;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.cblack{background-color: black;}
+.h500{height: 500px;}
+.h300{height: 300px;}
+
+/* 定位 */
+.pa{
+    position: absolute;
+}
+.pr{
+    position: relative;
+}
+
+/* 通用头部 */
+/* 1.头部样式 */
+#header .headertop a{
+    color: rgb(244,149,0);
+}
+
+/* 1.1头部横幅 */
+.headertop{
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+ /* 1.2头部搜索 */
+.black{
+    background:url(../imgs/eg.gif) no-repeat;
+    background-size: cover;
+    height: 90px;
+    width: 170px;
+    margin-left: 28px;
+    margin-top: 14px;
+    margin-bottom: 13px;
+    margin-right: 103px;
+}
+#header .search{
+    position: relative;
+    outline: none;
+}
+#header .search img{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 500px;
+    top: 25px;
+}
+.search-btn{
+    height: 35px;
+    width: 60px;
+    box-sizing: border-box;
+    border: 0;
+    float: left;
+    background-color: rgb(254,184,15);
+    color:white;
+    margin-top: 25px;
+}
+.search-text{
+    height: 35px;
+    width: 490px;
+    box-sizing: border-box;
+    border: rgb(254,184,15) solid 1px;
+    float: left;
+    padding-right: 30px;
+    padding-left: 10px;
+    line-height: 40px;
+    margin-top: 25px;
+    outline: none;
+}
+#header .shopping{
+    width: 277px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+#header .shopping a{
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+#header .p1{
+    color: rgb(254,184,15);
+    border: rgb(218,218,218) 1px solid;
+    border-radius: 5%;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+#header .p2{
+    color:rgb(218,218,218);
+    border: rgb(218,218,218) 1px solid;
+    border-radius: 5%;
+}
+#header .zero{
+    background-color: rgb(254,184,15);
+    color: white;
+    border-radius: 50%;
+    height: 20px;width: 20px;
+    display: inline-block;
+    margin-top: 8px;
+    line-height: 20px;
+    margin-right: 10px;
+    
+}
+#header .shopping img{
+    height: 20px;width: 20px;
+    margin-top:8px;
+    margin-left: 3px;
+}
+#header .header-list{
+    height: 20px;
+    margin-top: 24px;
+}
+#header .header-list li{
+    float: left;
+    width: 80px;
+    text-align: center;
+}
+#header .header-list a{
+    color: rgb(159,159,159);
+    font-size: 16px;
+}
+
+
+
+/* 底部通用样式 */
+#foot {
+    margin-top: 20px;
+}
+#foot .foottop{
+    height: 85px;
+}
+#foot .foottop>div{
+    float: left;
+    width: 275px;
+    height: 66px;
+    margin-left: 24px;
+}
+#foot .foottop img{
+    float: left;
+    margin-top: 20px;
+}
+#foot .foottop>div>div{
+    margin-top: 25px;
+    margin-left: 100px;
+}
+#foot .footmiddle{
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#foot .footmiddle>div{
+    width: 160px;
+    height: 200px;
+    /* border: 1px solid red; */
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#foot .footmiddle h1{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#foot .footmiddle p{
+    font-size: 16px;
+    line-height: 20px;
+}
+#foot .footmiddle .saoma p{
+    margin-bottom: 20px;
+}
+.footbottom{
+    background-color: #f4f4f4;
+}
+.footbox1{
+    width: 870px;
+    height: 40px;
+    margin: 0 auto ;
+}
+.footbox1 p{
+    text-align: center;
+}
+.footbox2{
+    width: 570px;
+    margin: 20px auto; 
+}

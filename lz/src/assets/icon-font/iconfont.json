@@ -1,0 +1,37 @@
+{
+  "id": "1960672",
+  "name": "legou",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "14046411",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "14046412",
+      "name": "左箭头",
+      "font_class": "zuojiantou",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "15056486",
+      "name": "闪电",
+      "font_class": "shandian",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1244097",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    }
+  ]
+}

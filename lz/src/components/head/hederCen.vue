@@ -74,7 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  height: 449px;
+  height: 450px;
   background: linear-gradient(to right, #4e0a9b, #363ac9);
   box-sizing: border-box;
   position: relative;

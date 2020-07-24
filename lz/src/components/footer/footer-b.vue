@@ -2,7 +2,9 @@
   <div class="footerB">
     <div class="footerB-c">
       <ul>
-        <li v-for="(item,index) in data" :key="index">{{item.title}}</li>
+        <li v-for="(item,index) in data" :key="index">
+          <router-link to>{{item.title}}</router-link>
+        </li>
       </ul>
       <div>
         <a href="#">
@@ -51,7 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 .footerB {
-  background-color: #f4f4f4 ;
+  background-color: #f4f4f4;
   .footerB-c {
     width: 1200px;
     height: 116px;
@@ -71,6 +73,10 @@ export default {
         line-height: 18px;
         border-right: 2px solid #ccc;
         padding: 0 8px;
+        a{
+          color: #808080;
+          text-decoration: none;
+        }
       }
       li:last-child {
         border-right: none;

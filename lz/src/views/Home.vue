@@ -8,24 +8,18 @@
 
     <Fecommend />
     <EveryDay />
+    <div class="box">
+      <HomeBirckBox />
+      <HomeBirckBox />
+      <HomeBirckBox />
+      <HomeBirckBox />
+    </div>
 
     <!-- 尾部 -->
     <FooterT />
     <FooterB />
-    <!-- 回到最上 -->
-    <el-backtop :bottom="100">
-      <div
-        style="{
-          height: 100%;
-          width: 100%;
-          background-color: #f2f5f6;
-          box-shadow: 0 0 6px rgba(0,0,0, .12);
-          text-align: center;
-          line-height: 40px;
-          color: #1989fa;
-        }"
-      >UP</div>
-    </el-backtop>
+    <!-- 左右弹出框 -->
+    <FixedBox />
   </div>
 </template>
 
@@ -35,9 +29,11 @@ import Container from "@/components/head/container";
 import HederCen from "@/components/head/hederCen";
 import FooterT from "@/components/footer/footer-t";
 import FooterB from "@/components/footer/footer-b";
+import FixedBox from "@/components/fixed/fixed-box";
 //内容
 import Fecommend from "@/components/fecommend/fecommend";
 import EveryDay from "@/components/content/EveryDay";
+import HomeBirckBox from "@/components/content/homeBirckBox";
 export default {
   name: "Home",
   components: {
@@ -46,11 +42,17 @@ export default {
     HederCen,
     FooterT,
     FooterB,
+    FixedBox,
     Fecommend,
     EveryDay,
+    HomeBirckBox,
   },
 };
 </script>
 <style lang="scss" scoped>
-
+.home {
+  .box {
+    background-color: #f4f4f4;
+  }
+}
 </style>

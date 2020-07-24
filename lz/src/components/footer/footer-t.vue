@@ -28,13 +28,15 @@
       <div class="left">
         <div v-for="(item,index) in data" :key="index">
           <h3>{{item.title}}</h3>
-          <p v-for="(a,i) in item.lj" :key="i">{{a.title}}</p>
+          <router-link to="">
+            <p v-for="(a,i) in item.lj" :key="i">{{a.title}}</p>
+          </router-link>
         </div>
       </div>
       <div class="right">
         <div v-for="(item,index) in AppData" :key="index">
           <h3>{{item.title}}</h3>
-          <img src="../../assets/img/qryhd.png">
+          <img src="../../assets/img/qryhd.png" />
         </div>
       </div>
     </div>
@@ -44,51 +46,48 @@
 <script>
 export default {
   name: "footerT",
-  data () {
-      return {
-          data: [
-              {
-                  title:'新手入门',
-                  lj:[
-                      {title:'购物流程'},
-                      {title:'会员制度'},
-                      {title:'订单查询'},
-                      {title:'服务协议及隐私说明'},
-                      {title:'网站地图'}
-                  ]
-              },
-              {
-                  title:'支付方式',
-                  lj:[
-                      {title:'货到付款'},
-                      {title:'网上支付'},
-                      {title:'礼品卡支付'},
-                      {title:'其它支付'}
-                  ]
-              },
-              {
-                  title:'配送服务',
-                  lj:[
-                      {title:'配送进度查询'},
-                      {title:'商品验货与签收'}
-                  ]
-              },
-              {
-                  title:'相关规则',
-                  lj:[
-                      {title:'平台规则'},
-                      {title:'退换货政策'},
-                      {title:'发票制度'},
-                      {title:'帮助中心'}
-                  ]
-              }
+  data() {
+    return {
+      data: [
+        {
+          title: "新手入门",
+          lj: [
+            { title: "购物流程" },
+            { title: "会员制度" },
+            { title: "订单查询" },
+            { title: "服务协议及隐私说明" },
+            { title: "网站地图" },
           ],
-          AppData:[
-              {title:'App更优惠',img:''},
-              {title:'加微信查订单',img:''}
-          ]
-      }
-  }
+        },
+        {
+          title: "支付方式",
+          lj: [
+            { title: "货到付款" },
+            { title: "网上支付" },
+            { title: "礼品卡支付" },
+            { title: "其它支付" },
+          ],
+        },
+        {
+          title: "配送服务",
+          lj: [{ title: "配送进度查询" }, { title: "商品验货与签收" }],
+        },
+        {
+          title: "相关规则",
+          lj: [
+            { title: "平台规则" },
+            { title: "退换货政策" },
+            { title: "发票制度" },
+            { title: "帮助中心" },
+          ],
+        },
+      ],
+      AppData: [
+        { title: "App更优惠", img: "" },
+        { title: "加微信查订单", img: "" },
+      ],
+    };
+  },
 };
 </script>
 
@@ -145,37 +144,40 @@ export default {
   .box2 {
     height: 246px;
     .left {
-       padding-top: 48px;
-       box-sizing: border-box;
-        div{
-            width: 150px;
-            height: 170px;
-            float: left;
-            margin-right: 50px;
-            h3{
-                font-weight: 700;
-                margin-bottom: 17px;
-            }
-            p{
-                margin-bottom: 10px;
-                color: #808080;
-            }
+      padding-top: 48px;
+      box-sizing: border-box;
+      div {
+        width: 150px;
+        height: 170px;
+        float: left;
+        margin-right: 50px;
+        h3 {
+          font-weight: 700;
+          margin-bottom: 17px;
         }
-        div:first-child{
-            margin-left: 50px;
+        a{
+          text-decoration: none;
         }
+        p {
+          margin-bottom: 10px;
+          color: #808080;
+        }
+      }
+      div:first-child {
+        margin-left: 50px;
+      }
     }
     .right {
-        div{
-            float: left;
-            width: 100px;
-        }
-        div:first-child{
-            margin-right: 30px;
-        }
-        img{
-            margin-top: 10px;
-        }
+      div {
+        float: left;
+        width: 100px;
+      }
+      div:first-child {
+        margin-right: 30px;
+      }
+      img {
+        margin-top: 10px;
+      }
     }
   }
 }

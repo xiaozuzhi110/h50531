@@ -37,6 +37,15 @@
 .h500{height: 500px;}
 .h300{height: 300px;}
 
+/* 图片翻转180度 */
+.is-rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
 /* 定位 */
 .pa{
     position: absolute;

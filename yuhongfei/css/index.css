@@ -284,6 +284,11 @@ button {
     text-align: center;
     line-height: 50px;
 }
+#middle .recommend-head i{
+    height: 36px;
+    width: 45px;
+    background: url(../imgs/sprite.png);
+}
 #middle .recommend-head:after{
     content: "";
     display: block;
@@ -479,7 +484,7 @@ button {
     height: 24px;
     width: 70px;
     border: 1px gray solid;
-    border-radius: 25%;
+    border-radius: 20px;
     float: left;
     text-align: center;
     font-size: 12px;

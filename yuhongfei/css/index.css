@@ -1,0 +1,539 @@
+
+
+
+/* 2.banner横幅 */
+#banner .banner-top{
+    background-color:rgb(244,244,244);
+    height: 26px;
+}
+#banner .banner-middle{
+    background-color: skyblue;
+}
+/* 2.1轮播图 */
+#tu ul {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+}
+
+#tu {
+    height: 450px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+    left: 0px;
+}
+#tu img{
+    width: 1200px;
+    height: 450px;
+}
+#tu li {
+    height: 450px;
+    width: 1200px;
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+
+button {
+    list-style: none;
+    position: absolute;
+    z-index: 2;
+}
+
+#zuo {
+    left: 208px;
+    top: 225px;
+}
+
+#you {
+    left: 1125px;
+    top: 225px;
+}
+
+#tu .tu1{
+    background: url(../imgs/lun1.jpg) no-repeat;
+    background-size: cover;
+}
+#tu .tu2{
+    background: url(../imgs/lun2.jpg) no-repeat;
+    background-size: cover;
+}
+#tu .tu3{
+    background: url(../imgs/lun3.jpg) no-repeat;
+    background-size: cover;
+}
+
+/* 2.2二级菜单 */
+#menu{
+    position: absolute;
+}   
+#menu>ul {
+    list-style: none;
+    position: relative;
+    width: 200px;
+    margin: 200px auto;
+    
+    
+}
+
+#menu div {
+    height: 450px;
+    width: 500px;
+    position: absolute;
+    left: 197px;
+    top: 0px;
+    display: none;
+    z-index: 10;
+   
+}
+#menu li>p{
+    position: relative;
+    z-index: 100;
+    line-height: 28px;
+    color:black;
+    font-size: 14px;
+    
+}
+
+#menu li {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 50;
+    background-color:skyblue;
+    
+}
+#menu .active{
+    display: block;
+    background-color: skyblue;
+    box-sizing: border-box;
+}
+
+/* 3倒计时 */
+/* 3.1广告 */
+
+#timedd .pic1,#timedd .pic2,#timedd .pic3,#timedd .pic4{
+    width: 285px;
+    height: 155px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#timedd .pic1{
+    background: url(../imgs/banner1.jpg) no-repeat;
+    background-size: cover;
+}
+#timedd .pic2{
+    background: url(../imgs/banner2.jpg) no-repeat;
+    background-size: cover;
+}
+#timedd .pic3{
+    background: url(../imgs/banner3.jpg) no-repeat;
+    background-size: cover;
+}
+#timedd .pic4{
+    background: url(../imgs/banner1.jpg) no-repeat;
+    background-size: cover;
+}
+/* 3.2二维码 */
+.twoweima{
+    height: 100px;
+    background: url(../imgs/bannertu.png) no-repeat;
+    background-size: cover;
+}
+
+/* 3.3倒计时 */
+/* 3.3.1倒计时 */
+.se-kl {
+    width: 190px;
+    height: 275px;
+    background-color: #e83632;
+    position: relative; 
+    margin-top: 10px;
+}
+
+.se-cn {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+}
+
+.se-en {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.se-io {
+    width: 20px;
+    height: 33px;
+    position: absolute;
+    background: url(../imgs/seckill.png) no-repeat;
+    background-position: -32.5px 0;
+    background-size: 52.5px 40px;
+    left: 85px;
+    top: 126px;
+    display: block;
+}
+
+.se-info {
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.se-count {
+    position: absolute;
+    top: 212px;
+    left: 30px;
+    height: 40px;
+}
+
+.se-day {
+    display: none;
+}
+
+.se-hour,
+.se-min,
+.se-sec {
+    position: relative;
+    background-color: #2f3430;
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+.se-txt {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.se-txt:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e83632;
+}
+
+/* 3.3.2倒计时右边翻页 */
+#timedd{
+    background-color: rgb(240,240,240);
+}
+#timedd .smalllun{
+    height:300px;
+    width: 980px;
+    position: relative;
+    top: -287px;
+    left: 215px;
+    overflow: hidden;
+    
+}
+#timedd .smalllun li>div{
+    height: 284px;
+    width: 229px;
+    float: left;
+    margin-left: 13px;
+    margin-top: 5px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+#timedd .smalllun li>div img{
+    height: 198px;
+    width: 198px;
+}
+#timedd .smalllun li>div span{
+    color: rgb(178,178,178);
+    font-size: 12px;
+    text-decoration: line-through;
+}
+#timedd ul{
+    position: absolute;
+    width: 2000px;
+}
+
+
+
+/* 4.中部主体 */
+/* 4.1好货推荐 */
+#middle .recommend-head{
+    margin: 50px auto;
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+#middle .recommend-head i{
+    height: 36px;
+    width: 45px;
+    background: url(../imgs/sprite.png);
+}
+#middle .recommend-head:after{
+    content: "";
+    display: block;
+    border: 2px solid red;
+    width: 8%;
+    margin: 0 auto;
+}
+#middle .recommend-head:hover{
+    color:skyblue;
+    transition: 1s;
+}
+
+#middle .recommendtu1{
+    width: 585px;
+    height: 410px;
+    float: left;
+    background-color: rgb(255,219,219);
+    box-sizing: border-box;
+    padding: 30px 25px 42px 25px;
+}
+#middle .recommendtu2{
+    width: 585px;
+    height: 410px;
+    float: left;
+    margin-left: 30px;
+    background-color: rgb(172,208,255);
+    box-sizing: border-box;
+    padding: 30px 25px 42px 25px;
+}
+#middle .recommendtu1 span{
+    color:rgb(255,144,253) ;
+}
+#middle .recommendtu2 span{
+    color:rgb(0,111,253) ;
+}
+#middle a{
+    color:rgb(159,159,159);
+}
+#middle .recommendtu1 div{
+    width: 165px;height: 250px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 28px;
+    
+}
+#middle .recommendtu1 div:not(.one){
+    margin-left: 20px;
+}
+#middle .recommendtu2 div{
+    width: 165px;height: 250px;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 28px;
+}
+#middle .recommendtu2 div:not(.one){
+    margin-left: 20px;
+}
+#middle .recommendtu1 div{
+    background: url(../imgs/recommendtu1.jpg) no-repeat;
+    background-size: cover;
+}
+#middle .recommendtu2 div{
+    background: url(../imgs/recommendtu1.jpg) no-repeat;
+    background-size: cover;
+}
+#middle .piao1{
+    position: absolute;
+    left:25px;
+    top:294px;
+    background-color: white;
+    opacity:0.7;
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+#middle .piao2{
+    position: absolute;
+    left:25px;
+    top:294px;
+    background-color: white;
+    opacity:0.7;
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+#middle .piao3{
+    position: absolute;
+    left:25px;
+    top:294px;
+    background-color: white;
+    opacity:0.7;
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+#middle .piao4{
+    position: absolute;
+    left:25px;
+    top:294px;
+    background-color: white;
+    opacity:0.7;
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+#middle .piao5{
+    position: absolute;
+    left:210px;
+    top:294px;
+    background-color: white;
+    opacity:0.7;
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+#middle .piao6{
+    position: absolute;
+    left:396px;
+    top:294px;
+    background-color: white;
+    opacity:0.7;
+    height: 50px;
+    width: 165px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+
+
+/* 5中部主体内容 */
+#content{
+    background-color: rgb(240,240,240);
+}
+#content .content-head{
+    margin-top: 42px;
+}
+
+
+/* 5.1主体菜单 */
+#content .content-head li{
+    float: right;
+    margin-right: 21px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* 5.2.1主体左边 */
+#content .contentzuo{
+    width: 255px;
+    height:460px
+}
+#content .contentzuo a:hover{
+    background-color: #00ff00;
+    transition: 1s;
+}
+#content .contentzhong{
+    width: 455px;
+    height:460px
+}
+#content .contentyou{
+    width: 455px;
+    height:460px
+}
+#content .content-bottom>div:not(.contentzuo){
+    margin-left: 15px;
+}
+#content .contentzuotu{
+    width: 255px;
+    
+}
+#content .contentzuotu img{
+    width: 255px;
+    height: 330px;
+}
+#content .contentzuomenu{
+    height: 130px;
+    padding: 15px 0px;
+    box-sizing: border-box;
+}
+#content .contentzuomenu a{
+    height: 24px;
+    width: 70px;
+    border: 1px gray solid;
+    border-radius: 20px;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#content .contentzuoxiatu{
+    height: 56px;
+    width: 126px;
+}
+
+
+/* 5.2.2主体中间 */
+#content .contentzhongshang{
+    width: 455px;
+    height: 298px;
+}
+#content .contentzhongxia{
+    width: 455px;
+    height: 150px;
+}
+#content .contentzhong p{
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    width: 455px;
+    line-height: 50px;
+    text-align: center;
+    top: 249px;
+    height: 50px;
+}
+#content .contentyou>div{
+    height: 220px;
+    width: 220px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 20px 10px 20px;
+}
+#content .contentyou h1{
+    margin-top: 10px;
+}
+#content .contentyou p{
+    margin-bottom: 10px;
+}
+
+
+

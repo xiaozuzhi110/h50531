@@ -1,0 +1,116 @@
+/* 1头部(见公共样式) */
+
+/* 2广告 */
+#banner{
+    background:url(../imgs/zhuanqubanner.png);
+    height: 473px;
+}
+#banner .juxing{
+    background: url(../imgs/zhuanqu.png);
+    color: white;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 270px;
+    height: 395px;
+    margin-top: 30px;
+}
+#banner h1{
+    margin-top: 14px;
+    text-align: center;
+}
+#banner p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#banner a{
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+    line-height: 24 px;
+    text-align: center;
+}
+#banner a:hover{
+    color: #00A7EA; transition: 1s;
+}
+#banner .bannerquyu{
+    width: 206px;
+}
+
+#banner .bannerquyu::after{
+    content: "";
+    display: block;
+    border: 2px dashed white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* 3标题 */
+#title .titlelt1,.titlelt2,.titlelt3{
+    height: 50px;
+}
+#title a{
+    margin-left: 16px;  
+    margin-top: 10px;
+    line-height: 24px;
+}
+#title .titlepiao{
+    position: absolute;
+    top: 285px;
+}
+
+
+/* 3.1标题左边 */
+#title .title-left{
+    margin-right: 13px;
+    margin-bottom: 25px;
+}
+
+#title .title-left .titlelt1>img{
+    position: absolute;
+    left:200px;
+    top: 14px;
+}
+
+
+/* 3.2标题中间 */
+#title .title-middle span{
+    position: absolute;
+    color: gray;
+    top: 18px;
+    left: 105px;
+}
+#title .title-middle .titlelt2>img{
+    position: absolute;
+    left: 424px;
+    top: 14px;
+}
+
+
+/* 3.3标题右边 */
+#title .title-right{
+    margin-left: 10px;
+}
+#title .title-right span{
+    position: absolute;
+    color: gray;
+    top: 18px;
+    left: 140px;
+}
+#title .title-right .titlelt3>img{
+    position: absolute;
+    left: 424px;
+    top: 14px;
+}
+
+
+/* 3.4标题底部 */
+#title .title-bottom img:not(:first-child
+){
+    margin-left: 15px;
+}

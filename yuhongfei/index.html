@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页-乐购</title>
+    <meta name="description"
+        content="乐购.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,乐购" />
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入首页样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入JS库 -->
+    <script src="./js/jquery.js"></script>
+    <!-- 引入首页js -->
+    <script src="./js/index.js"></script>
+    <!-- 引入轮播图JS -->
+    <script src="./js/yd.js"></script>
+</head>
+
+<body>
+    <!-- 1.头部 -->
+    <div id="header">
+        <!-- 1.1头部横幅 -->
+        <div class="container-fuild cblack headertop">
+            <div class="container clearfix">
+                <p class="f20 fl">乐购www.legou.com</p>
+                <p class="f20 fr">&nbsp;&nbsp;&nbsp;请<a href="#">&nbsp;登录|注册</a></p>
+                <p class="f20 fr">欢迎光临乐购</p>
+            </div>
+        </div>
+        <!-- 1.2头部搜索栏 -->
+        <div class="container clearfix">
+            <div class="black fl"></div>
+            <form class="fl search clearfix">
+                <input type="text" class="search-text" placeholder="请输入搜索的商品">
+                <input type="submit" value="" class="search-btn">
+                <img src="./imgs/search.png" alt="">
+            </form>
+            <div class="fl shopping">
+                <a href="#" class="fl p1 f18 juzhong"><img src="./imgs/购物车.png" alt="" class="fl">购物车<div
+                        class="zero fr f12">0</div></a>
+                <a href="#" class="fl p2 f18 juzhong">我的订单</a>
+            </div>
+            <div>
+                <ul class="fl header-list">
+                    <li><a href="#">图书</a></li>
+                    <li><a href="#">电子书</a></li>
+                    <li><a href="#">原创文学</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li><a href="#">运动户外</a></li>
+                    <li><a href="#">孕婴童</a></li>
+                    <li><a href="#">家居</a></li>
+                    <li><a href="#">创意文具</a></li>
+                    <li><a href="#">地方特产</a></li>
+                    <li><a href="#">海外购</a></li>
+                    <li><a href="#">电器城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 2.banner图 -->
+    <div id="banner">
+        <!-- 2.1淡影图 -->
+        <div class="container-fuild banner-top"></div>
+        <!-- 2.2banner中部 -->
+        <div class="container-fuild banner-middle">
+            <!-- 2.2.1二级菜单 -->
+            <div class="container">
+                <ul id="menu">
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第一天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第二天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第三天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第四天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第五天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第一天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第二天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第三天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第四天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第五天读书</div>
+                    </li>
+                    <li>
+                        <p>图书 电子书 童书</p>
+                        <div>第五天读书</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 2.2.2轮播图 -->
+            <div id="tu" class="container">
+                <button id="zuo">&lt;</button>
+                <button id="you">&gt;</button>
+                <ul class="container">
+                    <li class="tu1"></li>
+                    <li class="tu2"></li>
+                    <li class="tu3"></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- 3.倒计时 -->
+    <div id="timedd" class="container-fuild">
+        <!-- 3.1广告 -->
+        <div class="container clearfix">
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="pic4"></div>
+        </div>
+        <!-- 3.2二维码 -->
+        <div class="container twoweima mt20"></div>
+        <!-- 3.3倒计时 -->
+        <div class="container time">
+            <!-- 3.3.1倒计时 -->
+            <div class="timebox h300">
+                <div class="se-kl">
+                    <div class="se-cn">乐购</div>
+                    <div class="se-en">COUNT DOWN</div>
+                    <i class="se-io"></i>
+                    <div class="se-info">距离结束还剩</div>
+                    <div class="se-count">
+                        <div class="se-day"></div>
+                        <div class="se-hour"><span class="se-txt">00</span></div>
+                        <div class="se-min"><span class="se-txt">00</span></div>
+                        <div class="se-sec"><span class="se-txt">00</span></div>
+                    </div>
+                </div>
+                <div class="smalllun">
+                    <ul id="lunbo2">
+                        <li>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                            <div>
+                                <img src="./imgs/music.jpg" alt="">
+                                <p class="f16 bold">小米小爱音箱 Play</p>
+                                <p class="f16 bold red">￥129.00&nbsp;&nbsp;<span>230.00</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4.中部推荐 -->
+    <div id="middle">
+        <div class="container">
+            <div class="recommend clearfix">
+                <!-- 4.1好货推荐 -->
+                <div class="recommend-head f30 bold"><i></i>每日好货推荐<i></i></div>
+                <!-- 4.2好货内容 -->
+                <div class="recommendtu1 pr">
+                    <h4 class="piao4">- 诗篇 -</h4>
+                    <h4 class="piao5">JNBY</h4>
+                    <h4 class="piao6">品质女装</h4>
+                    <p class="f26"><span>乐购快抢</span>·美好生活抢先到</p>
+                    <p><a href="#" class="f16">品质好物 &nbsp;天天低价 &gt;&gt;</a></p>
+                    <div class="one"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="recommendtu2 pr">
+                    <h4 class="piao4">ITS SKIN</h4>
+                    <h4 class="piao5">阿芙</h4>
+                    <h4 class="piao6">Rosel女装</h4>
+                    <p class="f26"><span>乐购快抢</span>·美好生活抢先到</p>
+                    <p><a href="#" class="f16">150+品牌疯抢中 &nbsp;&gt;&gt;</a></p>
+                    <div class="one"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 5中部主体内容 -->
+    <div id="content" class="container-fuild">'
+         <!-- 5.1主体菜单 -->
+        <div class="container content-head clearfix">
+            <span class="fl"><img src="./imgs/middletitle1.png" alt=""></span>
+            <ul class="fr">
+                <li>热销内衣</li>
+                <li>精品男装</li>
+                <li>童装</li>
+            </ul>
+        </div>
+        <!-- 5.2主体内容 -->
+        <div class="container content-bottom clearfix">
+            <!-- 5.2.1主体左边 -->
+            <div class="contentzuo fl">
+                <div class="contentzuotu">
+                    <img src="./imgs/contentzuo.jpg" alt="">
+                </div>
+                <div class="contentzuomenu">
+                    <a href="#">女装</a>
+                    <a href="#">内衣</a>
+                    <a href="#">泳衣</a>
+                    <a href="#">功能箱包</a>
+                    <a href="#">户外运动</a>
+                    <a href="#">男装</a>
+                    <a href="#">女鞋</a>
+                    <a href="#">男鞋</a>
+                    <a href="#">全部分类</a>
+                </div>
+            </div>
+            <!-- 5.2.2主体中间 -->
+            <div class="contentzhong fl pr">
+                <div class="contentzhongshang"><img src="./imgs/contentzhongshang.png" alt=""></div>
+                <div class="contentzhongxia"><img src="./imgs/contentzhongxia.png" alt=""></div>
+                <p class="f18">大品牌折扣  三折封顶</p>
+            </div>
+            <div class="contentyou fl">
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+            </div>
+            <div class="container fl">
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia1.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia2.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia3.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia4.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia5.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia6.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia7.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia8.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia9.png" alt=""></div>
+            </div>   
+        </div>
+        <div class="container content-head clearfix">
+            <span class="fl"><img src="./imgs/middletitle2.png" alt=""></span>
+            <ul class="fr">
+                <li>热销内衣</li>
+                <li>精品男装</li>
+                <li>童装</li>
+            </ul>
+        </div>
+        <!-- 5.2主体内容 -->
+        <div class="container content-bottom clearfix">
+            <!-- 5.2.1主体左边 -->
+            <div class="contentzuo fl">
+                <div class="contentzuotu">
+                    <img src="./imgs/contentzuo.jpg" alt="">
+                </div>
+                <div class="contentzuomenu">
+                    <a href="#">女装</a>
+                    <a href="#">内衣</a>
+                    <a href="#">泳衣</a>
+                    <a href="#">功能箱包</a>
+                    <a href="#">户外运动</a>
+                    <a href="#">男装</a>
+                    <a href="#">女鞋</a>
+                    <a href="#">男鞋</a>
+                    <a href="#">全部分类</a>
+                </div>
+            </div>
+            <!-- 5.2.2主体中间 -->
+            <div class="contentzhong fl pr">
+                <div class="contentzhongshang"><img src="./imgs/contentzhongshang.png" alt=""></div>
+                <div class="contentzhongxia"><img src="./imgs/contentzhongxia.png" alt=""></div>
+                <p class="f18">大品牌折扣  三折封顶</p>
+            </div>
+            <div class="contentyou fl">
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+            </div>
+            <div class="container fl">
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia1.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia2.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia3.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia4.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia5.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia6.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia7.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia8.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia9.png" alt=""></div>
+            </div>   
+        </div>
+        <div class="container content-head clearfix">
+            <span class="fl"><img src="./imgs/middletitle3.png" alt=""></span>
+            <ul class="fr">
+                <li>热销内衣</li>
+                <li>精品男装</li>
+                <li>童装</li>
+            </ul>
+        </div>
+        <!-- 5.2主体内容 -->
+        <div class="container content-bottom clearfix">
+            <!-- 5.2.1主体左边 -->
+            <div class="contentzuo fl">
+                <div class="contentzuotu">
+                    <img src="./imgs/contentzuo.jpg" alt="">
+                </div>
+                <div class="contentzuomenu">
+                    <a href="#">女装</a>
+                    <a href="#">内衣</a>
+                    <a href="#">泳衣</a>
+                    <a href="#">功能箱包</a>
+                    <a href="#">户外运动</a>
+                    <a href="#">男装</a>
+                    <a href="#">女鞋</a>
+                    <a href="#">男鞋</a>
+                    <a href="#">全部分类</a>
+                </div>
+            </div>
+            <!-- 5.2.2主体中间 -->
+            <div class="contentzhong fl pr">
+                <div class="contentzhongshang"><img src="./imgs/contentzhongshang.png" alt=""></div>
+                <div class="contentzhongxia"><img src="./imgs/contentzhongxia.png" alt=""></div>
+                <p class="f18">大品牌折扣  三折封顶</p>
+            </div>
+            <div class="contentyou fl">
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+            </div>
+            <div class="container fl">
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia1.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia2.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia3.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia4.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia5.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia6.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia7.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia8.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia9.png" alt=""></div>
+            </div>   
+        </div>
+        <div class="container content-head clearfix">
+            <span class="fl"><img src="./imgs/middletitle4.png" alt=""></span>
+            <ul class="fr">
+                <li>热销内衣</li>
+                <li>精品男装</li>
+                <li>童装</li>
+            </ul>
+        </div>
+        <!-- 5.2主体内容 -->
+        <div class="container content-bottom clearfix">
+            <!-- 5.2.1主体左边 -->
+            <div class="contentzuo fl">
+                <div class="contentzuotu">
+                    <img src="./imgs/contentzuo.jpg" alt="">
+                </div>
+                <div class="contentzuomenu">
+                    <a href="#">女装</a>
+                    <a href="#">内衣</a>
+                    <a href="#">泳衣</a>
+                    <a href="#">功能箱包</a>
+                    <a href="#">户外运动</a>
+                    <a href="#">男装</a>
+                    <a href="#">女鞋</a>
+                    <a href="#">男鞋</a>
+                    <a href="#">全部分类</a>
+                </div>
+            </div>
+            <!-- 5.2.2主体中间 -->
+            <div class="contentzhong fl pr">
+                <div class="contentzhongshang"><img src="./imgs/contentzhongshang.png" alt=""></div>
+                <div class="contentzhongxia"><img src="./imgs/contentzhongxia.png" alt=""></div>
+                <p class="f18">大品牌折扣  三折封顶</p>
+            </div>
+            <div class="contentyou fl">
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="f18 bold">时尚精致女装</h1>
+                    <p class="f12">春夏女装99选3</p>
+                    <img src="./imgs/contentyou1.jpg" alt="">
+                </div>
+            </div>
+            <div class="container fl">
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia1.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia2.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia3.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia4.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia5.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia6.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia7.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia8.png" alt=""></div>
+                <div class="contentzuoxiatu fl"><img src="./imgs/contentzuoxia9.png" alt=""></div>
+            </div>   
+        </div>
+    </div>
+    <!-- 底部通用样式 -->
+    <div id="foot" class="container">
+        <div class="foottop clearfix">
+            <div>
+                <img src="./imgs/foot1.jpg" alt="">
+                <div>
+                    <p class="f20 bold">正品保障</p>
+                    <p class="f14">正品行货  放心选购</p>
+                </div>    
+            </div>
+            <div>
+                <img src="./imgs/foot2.jpg" alt="">
+                <div>
+                    <p class="f20 bold">满86包邮</p>
+                    <p class="f14">满86元 免运费</p>
+                </div>    
+            </div>
+            <div>
+                <img src="./imgs/foot3.jpg" alt="">
+                <div>
+                    <p class="f20 bold ">售后无忧</p>
+                    <p class="f14">7天无理由退货</p>
+                </div>
+            </div>
+            <div>
+                <img src="./imgs/foot4.jpg" alt="">
+                <div>
+                    <p class="f20 bold">准时送达</p>
+                    <p class="f14">收货时间由你做主</p>
+                </div>    
+            </div>
+        </div>
+        <div class="footmiddle" style="height: 246px;">
+            <div>
+                <h1>新手入门</h1>
+                <p><a href="#">购物流程</a></p>
+                <p><a href="#">会员制度</a></p>
+                <p><a href="#">订单查询</a></p>
+                <p><a href="#">服务协议及隐私说明</a></p>
+                <p><a href="#">网站地图</a></p>
+            </div>
+            <div>
+                <h1>支付方式</h1>
+                <p><a href="#">货到付款</a></p>
+                <p><a href="#">网上支付</a></p>
+                <p><a href="#">礼品卡支付</a></p>
+                <p><a href="#">其他支付</a></p>
+            </div>
+            <div>
+                <h1>配送服务</h1>
+                <p><a href="#">配送进度查询</a></p>
+                <p><a href="#">商品验货与签收</a></p>
+            </div>
+            <div>
+                <h1>相关规则</h1>
+                <p><a href="#">平台规则</a></p>
+                <p><a href="#">退换货政策</a></p>
+                <p><a href="#">发票制度</a></p>
+                <p><a href="#">帮助中心</a></p>
+            </div>
+            <div class="saoma">
+                <p class="f14 bold">APP更优惠</p>
+                <img src="./imgs/saoma.jpg" alt="">
+            </div>
+            <div class="saoma">
+                <p class="f14 bold">加微信查订单</p>
+                <img src="./imgs/saoma.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fuild footbottom" style="height: 118px;">
+        <div class="footbox1">
+            <p class="f14">沪ICP备XXXXXXXXX号 | 经营证照 | 互联网药品信息服务资格证(沪)-经营性-2017-0006 | 违法和不良信息举报电话：XXX-XXXXXXXX | 沪B2-XXXXXXX | 
+                沪公网安备 XXXXXXXXX号 | 友情链接 | 出版物经营许可证 | 增值电信业务经营许可证</p>
+        </div>
+       <div class="footbox2">
+           <a href="#"><img src="./imgs/f1.jpg" alt=""></a>
+           <a href="#"><img src="./imgs/f2.jpg" alt=""></a>
+           <a href="#"><img src="./imgs/f3.png" alt=""></a>
+           <a href="#"><img src="./imgs/f4.jpg" alt=""></a>
+           <a href="#"><img src="./imgs/f5.png" alt=""></a>
+           <a href="#"><img src="./imgs/f6.jpg" alt=""></a>
+       </div>
+    </div>
+</body>
+
+</html>

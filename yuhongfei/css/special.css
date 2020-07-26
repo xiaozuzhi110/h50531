@@ -31,7 +31,9 @@
     text-align: center;
 }
 #banner a:hover{
-    color: #00A7EA; transition: 1s;
+    color: #00A7EA;
+    font-weight: bolder;
+    transition: 1s;
 }
 #banner .bannerquyu{
     width: 206px;
@@ -59,9 +61,10 @@
     margin-top: 10px;
     line-height: 24px;
 }
-#title .titlepiao{
+#title .titlepiao1,.titlepiao2,.titlepiao3{
     position: absolute;
     top: 285px;
+    left:0px;
 }
 
 
@@ -113,4 +116,95 @@
 #title .title-bottom img:not(:first-child
 ){
     margin-left: 15px;
+}
+
+
+/* 4.主体 */
+#menu .menutop{
+    height: 60px;
+    width: 511px;
+    margin: 44px auto 28px;
+}
+#menu .menuleft a{
+    display: block;
+    width: 113px;
+    height: 35px;
+    background-color: gray;
+    position: absolute;
+    opacity: 0.5;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 35px;
+    border: white 1px solid;
+}
+#menu .menuleft a:hover{
+    color: red;
+    background-color: black;
+    opacity: 0.5;
+    transition: 1s;
+    border-radius: 20px;
+}
+#menu .a1{
+    left: 18px;
+    top: 25px;
+}
+#menu .a2{
+    left: 141px;
+    top: 25px;
+}
+#menu .a3{
+    left:18px;
+    top: 75px;
+}
+#menu .a4{
+    left: 141px;
+    top: 75px;
+}
+#menu .menumiddle{
+    width: 630px;
+    height: 410px;
+    margin-left: 15px;
+}
+#menu .menuright{
+    padding: 20px;
+    box-sizing: border-box;
+}
+#menu .menuright span{
+    font-size: 12px;
+    color: gray;
+}
+#menu .menuright>p{
+    margin-bottom: 10px;
+}
+#menu .menuright li:not(:first-child){
+    font-size: 14px;
+    border-bottom: gray 1px solid;
+    line-height: 48px;
+}
+#menu .menuright li:nth-child(1) p{
+    width: 120px;
+    margin-left: 11px;
+    font-size: 14px;
+}
+#menu .brandtop p{
+    margin-left:650px;
+    margin-top: 10px;
+    margin-right: 60px;
+    line-height: 30px;
+}
+#menu .brandtop div{
+    margin-left:650px;
+    border: solid 1px black;
+    width: 324px;
+    height: 62px;
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    line-height: 62px;
+    font-size: 24px;
+    margin-bottom: 42px;
+}
+#menu .brandtop>img{
+    margin-left: 35px;
 }

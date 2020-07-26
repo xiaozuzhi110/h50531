@@ -1,0 +1,44 @@
+#register{
+    height: 1000px;
+    width: 996px;
+    margin: 0 auto;
+
+
+}
+
+#register ul{
+    width: 840px;
+    border-bottom:1px solid gray ;
+    margin: 100px auto;
+}
+#register ul li{
+    float: left;
+    font-size: 16px;
+    margin-left: 150px;
+    height: 30px;
+}
+
+#register span{
+    background-color: #ff9c00;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+}
+
+#register .active{
+    font-weight: bold;
+}
+
+#register .active::after{
+    content: "";
+    display: block;
+    border: 2px solid #ff9c00;
+    width: 140%;
+    margin-top: 9px;
+    margin-left: -13px;
+}
+

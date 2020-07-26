@@ -164,6 +164,11 @@
     color: rgb(159,159,159);
     font-size: 16px;
 }
+#header .header-list a:hover{
+    color: #00A7EA;
+    font-weight: bolder;
+    transition: 1s;
+}
 
 
 
@@ -227,4 +232,17 @@
 .footbox2{
     width: 570px;
     margin: 20px auto; 
+}
+
+
+/* 登录注册头部 */
+#logintop {
+    margin-bottom: 13px;
+}
+#logintop p{
+    line-height: 25px;
+    margin-left: 15px;
+}
+#logintop img{
+    margin-left: 20px;
 }

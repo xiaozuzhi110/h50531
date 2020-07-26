@@ -1,0 +1,131 @@
+/* 登录 */
+#loginbanner{
+    background: url(../imgs/login.png);
+    height: 600px;
+}
+#loginbanner .loginmain{
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 105px;
+    width: 400px;
+    height: 445px;
+}
+
+/* 登录选择 */
+#loginbanner .loginmain ul{
+    margin-left: 60px;
+    margin-top: 60px;
+}
+#loginbanner .loginmain li{
+    font-size: 18px;
+    float: left;
+    margin-left:20px;
+    margin-bottom: 10px;
+    letter-spacing: 2px ;
+}
+
+#loginbanner .loginkuang{
+    position: absolute;
+    height: 356px;
+    width: 400px;
+    left: 0;
+    top: 88px;
+    padding: 35px;
+    box-sizing: border-box;
+    border-top:1px solid gray ;
+    z-index: 1;
+}
+#loginbanner .loginkuang input{
+    width: 330px;
+    height: 45px;
+    margin-bottom: 35px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    padding-right: 50px;
+}
+#loginbanner .loginkuang .btn{
+    background-color: #ffa200;
+    color: white;
+    padding: 0px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: 0;
+}
+#loginbanner .loginkuang .yonghu{
+    position: absolute;
+    top: 35px;
+    left: 320px;
+}
+#loginbanner .loginkuang .mima{ 
+    position: absolute;
+    top: 115px;
+    left: 320px;
+}
+#loginbanner .loginkuang p{
+    margin-bottom: 20px;
+}
+
+#loginbanner .loginkuang .yanzhengma{
+    width: 180px;
+}
+
+#loginbanner .loginkuang .yanzheng{
+    width: 130px;
+    background-color: #ffa200;
+    border: 0;
+    color: white;
+    margin: 0;
+    margin-left: 10px;
+}   
+
+#loginbanner .active{
+    color:#ffa200;
+}
+
+#loginbanner .active::after{
+    content: "";
+    display: block;
+    border: 2px #ffa200 solid;
+    margin-top: 2px;
+    position: relative;
+    z-index: 10;
+}
+#loginbanner .on{
+    display: block;
+}
+.loginyincang{
+    display: none;
+}
+#loginbanner .switch{
+    position: absolute;
+    left: 340px;
+    top: 0;
+}
+
+
+#loginbanner .loginsaoma{
+    width: 400px;
+    height: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    
+}
+
+#loginbanner .loginsaoma .saoyisao{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+#loginbanner .loginsaoma p{
+    margin-left: 50px;
+    color: gray;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#loginbanner .saoma{
+    float: left;
+    margin-left: 50px ;
+}

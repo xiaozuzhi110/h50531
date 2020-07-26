@@ -27,4 +27,24 @@ window.onload=function(){
                 this.children[1].className="";
                 $(this).children('img').stop(true).animate({left:424},1000)
         }
-} 
+
+        $('.title-left').mouseover(function(){
+            $('.titlepiao1').stop(true).animate({left:35,top:80},1500)
+        })
+        $('.title-left').mouseout(function(){
+            $('.titlepiao1').stop(true).animate({left:0,top:285},1500)
+        })
+        $('.title-middle').mouseover(function(){
+            $('.titlepiao2').stop(true).animate({left:90,top:80},1500)
+        })
+        $('.title-middle').mouseout(function(){
+            $('.titlepiao2').stop(true).animate({left:0,top:285},1500)
+        })
+        $('.title-right').mouseover(function(){
+            $('.titlepiao3').stop(true).animate({left:90,top:80},1500)
+})
+        $('.title-right').mouseout(function(){
+        $('.titlepiao3').stop(true).animate({left:0,top:285},1500)
+        })
+}
+   

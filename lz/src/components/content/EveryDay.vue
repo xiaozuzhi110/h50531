@@ -11,19 +11,37 @@
       <ul>
         <li class="box1">
           <h3>
-            <span>乐购快抢</span> · 美好生活抢先到
+            <i>乐购快抢</i> · 美好生活抢先到
           </h3>
-          <p>品质好物 天天低价 >></p>
-          <div>
-            <div v-for="(item,index) in imgData" :key="index">
+          <p>150+品牌疯抢中 >></p>
+          <div class="picture-box">
+            <div v-for="(item,index) in imgData" :key="index" class="picture">
               <a href>
                 <img :src="item.img" alt />
-                <div>{{item.title}}</div>
+                <div class="pictureText">
+                  <span>{{item.title}}</span>
+                </div>
               </a>
             </div>
           </div>
         </li>
-        <li class="box2"></li>
+        <li class="box2">
+          <h3>
+            <i>品牌活动</i> · 最后疯抢 3折封顶
+          </h3>
+          <p>品质好物 天天低价 >></p>
+          <div class="picture-box">
+            <div v-for="(item,index) in imgData2" :key="index" class="picture">
+              <a href>
+                <img :src="item.img" alt />
+                <div class="pictureText">
+                  <span class="pictureText-t">{{item.title}}</span>
+                  <span class="pictureText-b">{{item.synopsis}}</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -55,17 +73,20 @@ export default {
         {
           img:
             "//img.alicdn.com/tfscom/i1/412129187/O1CN01QMYhAe2HjhF6DX7tY_!!412129187.jpg_180x180xzq90.jpg_.webp",
-          title: "- 诗篇 -",
+          title: "ITS SKIN",
+          synopsis: "明星爆款  买一享三",
         },
         {
           img:
             "//img.alicdn.com/tfscom/i1/412129187/O1CN01QMYhAe2HjhF6DX7tY_!!412129187.jpg_180x180xzq90.jpg_.webp",
-          title: "JNBY",
+          title: "阿芙",
+          synopsis: "面部护理好货超值购",
         },
         {
           img:
             "//img.alicdn.com/tfscom/i1/412129187/O1CN01QMYhAe2HjhF6DX7tY_!!412129187.jpg_180x180xzq90.jpg_.webp",
-          title: "品质女装",
+          title: "Rosel女装",
+          synopsis: "秋上新  三折封顶",
         },
       ],
     };
@@ -141,16 +162,58 @@ export default {
           margin-left: 26px;
           margin-bottom: 29px;
         }
+        .picture-box {
+          padding: 0 25px;
+          .picture {
+            float: left;
+            margin-right: 20px;
+            a {
+              position: relative;
+              img {
+                width: 165px;
+                height: 250px;
+              }
+              .pictureText {
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                margin-left: -70px;
+                background-color: rgba(255, 255, 255,.6);
+                width: 140px;
+                height: 55px;
+                font-size: 24px;
+                color: #333;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .pictureText-t{
+                  font-size: 18px;
+                }
+                .pictureText-b{
+                  font-size: 12px;
+                  color: #808080;
+                }
+              }
+            }
+          }
+          .picture:last-child {
+            margin-right: 0;
+          }
+        }
       }
       .box1 {
         background-color: #ffdbdb;
         margin-right: 30px;
-        span {
+        i {
           color: #ff72fd;
         }
       }
       .box2 {
         background-color: #acd0ff;
+        i {
+          color: #006fff;
+        }
       }
     }
   }
